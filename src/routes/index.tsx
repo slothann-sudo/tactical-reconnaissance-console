@@ -219,7 +219,7 @@ function UavStatus({ id, zone, direction, progress, index }: { id: string; zone:
 
 function MiniRadar({ index }: { index: number }) {
   const positions = [[40, 18], [53, 39], [26, 46]];
-  const point = positions[index] ?? positions[0];
+  const point = positions[index] ?? [40, 18];
   return (
     <svg className="mini-radar" viewBox="0 0 72 72" aria-label="小型雷达扫描预览">
       <circle cx="36" cy="36" r="30" className="radar-boundary" />
